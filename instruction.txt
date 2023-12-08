@@ -1,0 +1,13 @@
+For PDF Format
+
+- Destination Set As PDF Format
+- Layout Portrait 
+- Paper Size A4
+- Margin Default
+- Scale Custom - 65
+- Option Untick 2 of Them
+
+
+how to launch the software
+
+- double click index.html

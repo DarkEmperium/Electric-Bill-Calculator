@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>Electricity Cost Calculator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="version"><p><i><b>rev 1.0</b></i></p></div>
+
+        <section class="notice">
+            <h2><i><b>Important Notice !</b></i></h2>
+            <p><i><b>Please be advised that your bill statement is based on your individual power & water consumption</b></i></p>
+            <p><i><b>For any statement-related concerns, please contact our personal hotline at 016-6910286</b></i></p>
+        </section>
+
+        <h1>Electricity & Water Bill For <input id="date-container" type="date"></h1>
+        <h3>Address : <input id="address-container" type="text"></h3>
+  
+        <table>
+
+            <tr>
+                <th>Section</th>
+                <th>Name</th>
+                <th>This Month's KWh</th>
+                <th>Last Month's KWh</th>
+                <th>Total Individual Electric Cost (RM)</th>
+                <th>Total Bill Cost (RM)</th>
+            </tr>
+
+            <tr>
+                <td id="sectionNumber">1</td>
+                <td><input type="text" id="sectionName1" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh1" oninput="calculateCost(1)"></td>
+                <td><input type="number" id="lastMonthKWh1" oninput="calculateCost(1)"></td>
+                <td id="result1"></td>
+                <td id="waterresult1"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td><input type="text" id="sectionName2" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh2" oninput="calculateCost(2)"></td>
+                <td><input type="number" id="lastMonthKWh2" oninput="calculateCost(2)"></td>
+                <td id="result2"></td>
+                <td id="waterresult2"></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td><input type="text" id="sectionName3" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh3" oninput="calculateCost(3)"></td>
+                <td><input type="number" id="lastMonthKWh3" oninput="calculateCost(3)"></td>
+                <td id="result3"></td>
+                <td id="waterresult3"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td><input type="text" id="sectionName4" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh4" oninput="calculateCost(4)"></td>
+                <td><input type="number" id="lastMonthKWh4" oninput="calculateCost(4)"></td>
+                <td id="result4"></td>
+                <td id="waterresult4"></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td><input type="text" id="sectionName5" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh5" oninput="calculateCost(5)"></td>
+                <td><input type="number" id="lastMonthKWh5" oninput="calculateCost(5)"></td>
+                <td id="result5"></td>
+                <td id="waterresult5"></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td><input type="text" id="sectionName6" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh6" oninput="calculateCost(6)"></td>
+                <td><input type="number" id="lastMonthKWh6" oninput="calculateCost(6)"></td>
+                <td id="result6"></td>
+                <td id="waterresult6"></td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td><input type="text" id="sectionName7" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh7" oninput="calculateCost(7)"></td>
+                <td><input type="number" id="lastMonthKWh7" oninput="calculateCost(7)"></td>
+                <td id="result7"></td>
+                <td id="waterresult7"></td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td><input type="text" id="sectionName8" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh8" oninput="calculateCost(8)"></td>
+                <td><input type="number" id="lastMonthKWh8" oninput="calculateCost(8)"></td>
+                <td id="result8"></td>
+                <td id="waterresult8"></td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td><input type="text" id="sectionName9" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh9" oninput="calculateCost(9)"></td>
+                <td><input type="number" id="lastMonthKWh9" oninput="calculateCost(9)"></td>
+                <td id="result9"></td>
+                <td id="waterresult9"></td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td><input type="text" id="sectionName10" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh10" oninput="calculateCost(10)"></td>
+                <td><input type="number" id="lastMonthKWh10" oninput="calculateCost(10)"></td>
+                <td id="result10"></td>
+                <td id="waterresult10"></td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td><input type="text" id="sectionName11" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh11" oninput="calculateCost(11)"></td>
+                <td><input type="number" id="lastMonthKWh11" oninput="calculateCost(11)"></td>
+                <td id="result11"></td>
+                <td id="waterresult11"></td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td><input type="text" id="sectionName12" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh12" oninput="calculateCost(12)"></td>
+                <td><input type="number" id="lastMonthKWh12" oninput="calculateCost(12)"></td>
+                <td id="result12"></td>
+                <td id="waterresult12"></td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td><input type="text" id="sectionName13" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh13" oninput="calculateCost(13)"></td>
+                <td><input type="number" id="lastMonthKWh13" oninput="calculateCost(13)"></td>
+                <td id="result13"></td>
+                <td id="waterresult13"></td>
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td><input type="text" id="sectionName14" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh14" oninput="calculateCost(14)"></td>
+                <td><input type="number" id="lastMonthKWh14" oninput="calculateCost(14)"></td>
+                <td id="result14"></td>
+                <td id="waterresult14"></td>
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td><input type="text" id="sectionName15" style="text-transform: uppercase;"></td>
+                <td><input type="number" id="thisMonthKWh15" oninput="calculateCost(15)"></td>
+                <td><input type="number" id="lastMonthKWh15" oninput="calculateCost(15)"></td>
+                <td id="result15"></td>
+                <td id="waterresult15"></td>
+            </tr>
+
+            <tr>
+                <th colspan="4">Total</th>
+                <td colspan="1" id="totalCost"></td>
+                <td colspan="1" id="totalWaterCost"></td>
+            </tr>
+    
+        </table>
+  
+        <br>
+
+        <div class="button-wrapper">
+
+            <div class="button-container">
+                <button onclick="calculateTotalCost()">Calculate Total Cost</button>
+                <button onclick="toggleRateSection()">Toggle Rate Section</button>
+                <button onclick="calculateWaterBill()">One-Click Calculate All Individual Total Bill</button>  
+            </div>
+
+            <div id="rateSection" style="display: none;">
+                <label for="rate">Latest Rate :&nbsp;</label>
+                <input id="rate">
+                <button onclick="changerate()">Confirm</button>
+            </div>
+        
+        </div>
+
+        <section class="bill-wrapper">
+
+            <table>
+                
+                <tr>
+                    <th>Key in Electric Bill ( RM )</th>
+                    <td><input type="number" id="electricBill" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <th>Key in Water Bill ( RM )</th>
+                    <td><input type="number" id="waterBill" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <th>Total Individual Electric Cost</th>
+                    <td><input type="number" id="individualBill" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <th>Divide By ( Pax )</th>
+                    <td><input type="number" id="divideBy"></td>
+                </tr>
+
+                <tr>
+                    <th>Amount For Individual Cost</th>
+                    <td id="dividedTotal"></td>
+                </tr>
+
+            </table>
+
+            <div class="button-container">
+                <button onclick="calculateTotal()">Calculate</button>
+                <button onclick="printFunction()">Print Statement</button>
+            </div>  
+
+        </section>
+
+        <section class="footer">
+            <p><i><b>Unauthorized use or reproduction of the content on this software is strictly prohibited.</b></i></p>
+            <p><i><b>© 2023 Coded With Visual Studio Code - System owned by CHUA JUN DE</b></i></p>
+        </section>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
+

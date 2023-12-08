@@ -1,0 +1,144 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin: 40px auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+table input{
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.button-wrapper {
+    margin: auto;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#rateSection {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Caveat', cursive;
+    margin-top: 30px;
+}
+
+#rateSection input {
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.bill-wrapper table{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.bill-wrapper th , .bill-wrapper td {
+    width: 70%;
+}
+
+#date-container {
+    font-family: 'Caveat', cursive;
+    margin-left: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+#address-container {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+#sectionNumber , tr {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+#dividedTotal , #totalCost , [id^="result"] , [id^="waterresult"], #totalWaterCost{
+    font-family: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#totalWaterCost, #totalCost {
+    background-color: lightgray;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    margin: 2px auto;
+}
+
+.version {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.notice {
+    text-align: center;
+    border-color: red;
+    border-style: solid;
+    margin: auto 100px;
+    
+}
+
+.notice h2 {
+    color: red;
+}
+
+th {
+    background-color: lightgray;
+}
